@@ -31,7 +31,7 @@
 
 #activepkmnimg {
   position: fixed;
-  margin-top: 265px;
+  margin-top: 240px;
   margin-bottom: 95px;
   margin-left: 425px;
   background-color: transparent;
@@ -156,8 +156,13 @@ h1 {
   margin-inline-end: 0px;
   bottom: auto;
   position: absolute;
-  top: 500px;
-  left : 175px;
-  font-weight: bold;
+  top: 785px;
+  left : 795px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  color: #ad0303;
+  background-color: black;
+  border-color: #ad0303;
+  border-style: double;
   /* change font styling */
 }
