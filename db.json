@@ -1,44 +1,423 @@
-{
-  "ramens": [
+{ 
+    "pokemon" : [
     {
-      "id": 1,
-      "name": "Shoyu Ramen",
-      "restaurant": "Nonono",
-      "image": "./assets/ramen/shoyu.jpg",
-      "rating": 7,
-      "comment": "Delish. Can't go wrong with a classic!"
+        "name" : "Venusaur" ,
+        "id" : 1,
+        "image1" : "https://www.pkparaiso.com/imagenes/xy/sprites/animados/venusaur.gif",
+        "image2" : "https://www.pkparaiso.com/imagenes/xy/sprites/animados-espalda/venusaur.gif",
+        "level" : 50,
+        "type1" : "Grass",
+        "type2" : "Poison",
+        "stats" : {
+            "hp" : 178,
+            "atk" : 138,
+            "def" : 152,
+            "spAtk" : 138,
+            "spDef" : 138,
+            "speed" : 126
+        },
+        "moveset" : [
+            {
+                "name" : "Solar Beam",
+                "type" : "Grass",
+                "power" : 120,
+                "category" : "Special"
+            }, 
+            {
+                "name" : "Sludgebomb",
+                "type" : "Poison",
+                "power" : 90,
+                "category" : "Special"
+            },
+            {
+                "name" : "Vine Whip",
+                "type" : "Grass",
+                "power" : 45,
+                "category" : "Physical"
+            },
+            {
+                "name" : "Razor Leaf",
+                "type" : "Grass",
+                "power" : 55,
+                "category" : "Physical"
+            }],
+
+        "weaknesses" : {
+            "Fire" : 2,
+            "Ice" : 2,
+            "Flying" : 2,
+            "Psychic" : 2
+          },
+          "resistances" : {
+            "Water" : 0.5,
+            "Electric" : 0.5,
+            "Grass" : 0.25,
+            "Fighting" : 0.5
+          },
+          "immunity" : {
+            
+          }
+    
+
     },
+
     {
-      "id": 2,
-      "name": "Naruto Ramen",
-      "restaurant": "Naruto",
-      "image": "./assets/ramen/naruto.jpg",
-      "rating": 10,
-      "comment": "My absolute fave!"
+        "name" : "Charizard",
+        "id" : 2,
+        "image1" : "https://www.pkparaiso.com/imagenes/xy/sprites/animados/charizard-3.gif",
+        "image2" : "https://www.pkparaiso.com/imagenes/xy/sprites/animados-espalda/charizard.gif",
+        "level" : 50,
+        "type1" : "Fire",
+        "type2" : "Flying",
+        "stats" : {
+            "hp" : 170,
+            "atk" : 127,
+            "def" : 111,
+            "spAtk" : 166,
+            "spAef" : 120,
+            "speed" : 154
+        },
+        "moveset" : [
+            {
+                "name" : "Flamethrower",
+                "type" : "Fire",
+                "power" : 90,
+                "category" : "Special"
+            },
+            {
+                "name" : "Air Slash",
+                "type" : "Flying",
+                "power" : 75,
+                "category" : "Physical"
+            },
+            {
+                "name" : "Dragon Claw",
+                "type" : "Dragon",
+                "power" : 80,
+                "category" : "Physical"
+            },
+            {
+                "name" : "Earthquake",
+                "type" : "Ground",
+                "power" : 100,
+                "category" : "Physical"
+            }
+        ],
+
+        "weaknesses" : {
+            "Water" : 2,
+            "Electric" : 2,
+            "Rock" : 2
+          },
+          "resistances" : {
+            "Grass" : 0.5,
+            "Fighting" : 0.5,
+            "Bug" : 0.25,
+            "Fire" : 0.5,
+            "Fairy" : 0.5
+          },
+          "immunity" : {
+            
+          }
+    
+
     },
+
     {
-      "id": 3,
-      "name": "Nirvana Shiromaru",
-      "restaurant": "Ippudo",
-      "image": "./assets/ramen/nirvana.jpg",
-      "rating": "7",
-      "comment": "Do buy the hype."
+        "name" : "Blastoise" ,
+        "id" : 3,
+        "image1" : "https://www.pkparaiso.com/imagenes/xy/sprites/animados/blastoise.gif",
+        "image2" : "https://www.pkparaiso.com/imagenes/xy/sprites/animados-espalda/blastoise.gif",
+        "level" : 50,
+        "type1" : "Water",
+        "type2" : null,
+        "stats" : {
+            "hP" : 140,
+            "atk" : 83,
+            "def" : 100,
+            "spAtk" : 85,
+            "spDef" : 105,
+            "speed" : 78
+            },
+        "moveset" : [
+            {
+                "name" : "Hydro Pump",
+                "type" : "Water",
+                "power" : 110,
+                "category" : "Special"
+            },
+            {
+                "name" : "Ice Beam",
+                "type" : "Ice",
+                "power" : 90,
+                "category" : "Special"
+            },
+            {
+                "name" : "Earthquake",
+                "type" : "Ground",
+                "power" : 100,
+                "category" : "Physical"
+            },
+            {
+                "name" : "Brick Break",
+                "type" : "Fighting",
+                "power" : 75,
+                "category" : "Physical"
+            }
+        ],
+
+        "weaknesses" : {
+            "Grass" : 2,
+            "Electric" : 2
+          },
+        "resistances" : {
+            "Fire" : 0.5,
+            "Water" : 0.5,
+            "Ice" : 0.5,
+            "Steel" : 0.5
+          },
+          "immunity" : {
+            
+          }
+    
+
     },
+
     {
-      "id": 4,
-      "name": "Gyukotsu Ramen",
-      "restaurant": "Za-Ya Ramen",
-      "image": "./assets/ramen/gyukotsu.jpg",
-      "rating": 8,
-      "comment": "Good to the last drop."
+        "name" : "Arbok",
+        "id" : "4",
+        "image1" : "https://www.pkparaiso.com/imagenes/xy/sprites/animados/arbok.gif",
+        "image2" : "https://www.pkparaiso.com/imagenes/xy/sprites/animados-espalda/arbok.gif",
+        "level" : 50,
+        "type1" : "Poison",
+        "type2" : null,
+        "stats" : {
+            "hp" : 147,
+            "atk" : 155,
+            "def" : 97,
+            "spAtk" : 94,
+            "spDef" : 116,
+            "speed" : 127
+        },
+        "moveset" : [
+            { 
+                "name" : "Gunk Shot",
+                "type" : "Poison",
+                "power" : 120,
+                "category" : "Physical"
+            },
+            {
+                "name" : "Earthquake",
+                "type" : "Ground",
+                "power" : 100,
+                "category" : "Physical"
+            },
+            {
+                "name" : "Dragon Tail",
+                "type" : "Dragon",
+                "power" : 60,
+                "category" : "Physical"
+            },
+            {
+                "name" : "Crunch",
+                "type" : "Dark",
+                "power" : 80,
+                "category" : "Physical"
+            }
+        ], 
+    
+        "weaknesses" : {
+            "Ground" : 2,
+            "Psychic" : 2
+          },
+          "resistances" : {
+            "Bug" : 0.5,
+            "Fairy" : 0.5,
+            "Fighting" : 0.5,
+            "Grass" : 0.5
+          },
+          "immunity" : {
+            
+          }
+    
+    
     },
+
     {
-      "id": 5,
-      "name": "Kojiro Red Ramen",
-      "restaurant": "Ramen-Ya",
-      "image": "./assets/ramen/kojiro.jpg",
-      "rating": 6,
-      "comment": "Perfect for a cold night."
+        "name" : "Gengar",
+        "id" : 5,
+        "image1" : "https://www.pkparaiso.com/imagenes/xy/sprites/animados/gengar.gif",
+        "image2" : "https://www.pkparaiso.com/imagenes/xy/sprites/animados-espalda/gengar.gif",
+        "level" : 50,
+        "type1" : "Ghost",
+        "type2" : "Poison",
+        "stats" : {
+            "hp" : 147,
+            "atk" : 89,
+            "def" : 107,
+            "spAtk" : 193,
+            "spDef" : 115,
+            "speed" : 174
+        },
+        "moveset" : [
+            { 
+                "name" : "Shadow Ball" ,
+                "type" : "Ghost",
+                "power" : 80,
+                "category" : "Special"
+            },
+            {
+                "name" : "Sludgebomb",
+                "type" : "Poison",
+                "power" : 90,
+                "category" : "Special"
+            },
+            {
+                "name" : "Focus Blast",
+                "type" : "Fighting",
+                "power" : 120,
+                "category" : "Special"
+            },
+            {
+                "name" : "Thunderbolt",
+                "type" : "Electric",
+                "power" : 90,
+                "category" : "Special"
+            }
+        ], 
+    
+        "weaknesses" : {
+            "Dark" : 2,
+            "Ghost" : 2
+          },
+          "resistances" : {
+            "Bug" : 0.5,
+            "Fighting" : 0.5,
+            "Grass" : 0.5,
+            "Poison" : 0.5
+          },
+          "immunity" : {
+            "Ground" : 0,
+            "Normal" : 0
+          }
+    
+    },
+
+    {
+        "name" : "Alakazam",
+        "id" : 6,
+        "image1" : "https://www.pkparaiso.com/imagenes/xy/sprites/animados/alakazam-2.gif",
+        "image2" : "https://www.pkparaiso.com/imagenes/xy/sprites/animados-espalda/alakazam.gif",
+        "level" : 50,
+        "type1" : "Psychic",
+        "type2" : null,
+        "stats" : {
+            "hp" : 137,
+            "atk" : 47,
+            "def" : 56,
+            "spAtk" : 201,
+            "spDef" : 105,
+            "speed" : 168
+        },
+        "moveset" : [
+            { 
+                "name" : "Psychic",
+                "type" : "Psychic",
+                "power" : 90,
+                "category" : "Special"
+            },
+            {
+                "name" : "Focus Blast",
+                "type" : "Fighting",
+                "power" : 120,
+                "category" : "Special"
+            },
+            {
+                "name" : "Shadow Ball",
+                "type" : "Ghost",
+                "power" : 80,
+                "category" : "Special"
+            },
+            {
+                "name" : "Dazzling Gleam",
+                "type" : "Fairy",
+                "power" : 80,
+                "category" : "Special"
+            }
+        ], 
+    
+        "weaknesses" : {
+            "Dark" : 2,
+            "Bug" : 2,
+            "Ghost" : 2
+          },
+          "resistances" : {
+            "Psychic" : 0.5,
+            "Fighting" : 0.5
+          },
+
+          "immunity" : {
+            
+          }
+    
+    
+    },
+
+    {
+        "name" : "Jolteon",
+        "id" : 7,
+        "image1" : "https://www.pkparaiso.com/imagenes/xy/sprites/animados/jolteon.gif",
+        "image2" : "https://www.pkparaiso.com/imagenes/xy/sprites/animados-espalda/jolteon.gif",
+        "level" : 50,
+        "type1" : "Electric",
+        "type2" : null,
+        "stats" : {
+            "hp" : 137,
+            "atk" : 89,
+            "def" : 73,
+            "spAtk" : 169,
+            "spDef" : 107,
+            "speed" : 209
+        },
+        "moveset" : [
+            { 
+                "name" : "Thunderbolt",
+                "type" : "Electric",
+                "power" : 90,
+                "category" : "Special"
+            },
+            {
+                "name" : "Shadow Ball",
+                "type" : "Ghost",
+                "power" : 80,
+                "category" : "Special"
+            },
+            {
+                "name" : "Signal Beam",
+                "type" : "Bug",
+                "power" : 75,
+                "category" : "Special"
+            },
+            {
+                "name" : "Volt Switch",
+                "type" : "Electric",
+                "power" : 70,
+                "category" : "Special"
+            }
+        ], 
+    
+        "weaknesses" : {
+            "Ground" : 2
+          },
+        "resistances" : {
+            "Electric" : 0.5,
+            "Flying" : 0.5,
+            "Steel" : 0.5
+          },
+        "immunity" : {
+            
+          }
+    
     }
-  ]
-}
+
+]}

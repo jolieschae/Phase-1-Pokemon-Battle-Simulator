@@ -1,102 +1,163 @@
-* {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
-}
-
-body {
-  padding: 1rem;
-  text-align: center;
-  background-color: #fafafa;
-  display: flex;
-  flex-direction: column;
+.div-block {
+  position: static;
+  z-index: auto;
+  display: block;
+  overflow: visible;
+  max-height: 1144px;
+  max-width: 1920px;
+  min-height: 1144px;
+  min-width: 1920px;
+  margin-left: 0px;
+  padding-right: 54px;
+  padding-left: 54px;
+  flex-direction: row-reverse;
   justify-content: center;
+  flex-wrap: nowrap;
   align-items: center;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  background-image: url("file:///Users/joliegielchinsky/Desktop/phase1-project/background.png");
+  background-position: 0% 0%;
+  background-size: cover;
+  background-attachment: fixed;
+  -o-object-fit: fill;
+  object-fit: fill;
 }
 
-header {
-  padding: 0.5rem;
-  width: 100%;
-  color: white;
-  background-color: black;
+#activepkmnimg {
+  position: fixed;
+  margin-top: 265px;
+  margin-bottom: 95px;
+  margin-left: 425px;
+  background-color: transparent;
 }
 
-#ramen-menu {
-  display: flex;
-  overflow-x: auto;
-  margin: 1rem 0;
-  max-width: calc(100vw - 2rem);
+#wildpkmnimg {
+  position: fixed;
+  margin-top: 96px;
+  margin-bottom: 95px;
+  margin-left: 650px;
+  background-color: transparent;
 }
 
-#ramen-menu img {
-  flex: 0 1 auto;
-  height: 150px;
-  margin-right: 0.5rem;
-  cursor: pointer;
+#partypkmn6 {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  z-index: auto;
+  display: block;
+  margin-top: 650px;
+  margin-left: 814px;
 }
 
-#ramen-menu img:last-child {
-  margin-right: 0;
+#partypkmn5 {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  margin-top: 650px;
+  margin-left: 751px;
 }
 
-#ramen-detail {
-  position: relative;
+#partypkmn4 {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  margin-top: 650px;
+  margin-left: 688px;
 }
 
-.detail-image {
-  height: 350px;
+#partypkmn3 {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  margin-top: 650px;
+  margin-left: 625px;
 }
 
-.name,
-.restaurant {
+#partypkmn2 {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  margin-top: 650px;
+  margin-left: 561px;
+}
+
+#partypkmn1 {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  margin-top: 650px;
+  margin-left: 497px;
+}
+
+#battleform {
+  position: fixed;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 48%;
+  max-width: 200px;
+  min-width: 200px;
+  margin-top: 24px;
+  margin-right: 0px;
+  margin-left: 210px;
+}
+
+.form {
   position: absolute;
-  left: 10px;
-  padding: 0.25rem 5rem 0.25rem 1rem;
-  background-color: rgba(255, 255, 255, 0.8);
+  min-width: 200px;
+  margin-top: 48px;
+  margin-right: 49px;
 }
 
-.name {
-  bottom: 60px;
+.select-field {
+  position: fixed;
+  max-width: 200px;
+  min-width: 200px;
+  margin-top: 10px;
+  margin-left: 17px;
+  border-radius: 8px;
+  background-color: #b2b2b2;
+  box-shadow: 0 9px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-.restaurant {
-  bottom: 20px;
+.submit-button {
+  position: fixed;
+  margin-top: 40px;
+  margin-left: 17px;
+  border-radius: 5px;
+  background-color: #ad0303;
+  box-shadow: 0 9px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-form {
-  margin: 1rem 0;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-input,
-textarea {
-  font-size: 1rem;
-  border: 1px solid black;
-  background-color: white;
-  padding: 0.5rem;
-  margin: 0.25rem 0;
-  width: 100%;
-}
-
-input[type="submit"] {
-  color: white;
-  border: 1px solid white;
-  background-color: black;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-input[type="submit"]:active {
-  background-color: gray;
-}
-
-form h4 {
-  width: 100%;
-  padding: 0.25rem;
-  margin: 0.5rem 0;
-  color: white;
-  background-color: black;
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  bottom: auto;
+  position: absolute;
+  top: 500px;
+  left : 175px;
+  font-weight: bold;
+  /* change font styling */
 }

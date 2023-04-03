@@ -1,55 +1,34 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Ramen Rater</title>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <script defer type="text/javascript" src="./src/index.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Wild Pokemon Encounter</title>
 </head>
-
-<body>
-  <header>
-    <h3>Ramen Rater</h3>
-  </header>
-
-  <!-- Ramen Menu -->
-  <div id="ramen-menu">
-    <!-- Ramen Images Here -->
-  </div>
-
-  <!-- Ramen Details -->
-  <div id="ramen-detail">
-    <img class="detail-image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
-    <h2 class="name">Insert Name Here</h2>
-    <h3 class="restaurant">Insert Restaurant Here</h3>
-  </div>
-
-  <h3>Rating:</h3>
-  <p>
-    <span id='rating-display'>Insert rating here</span> / 10
-  </p>
-  <h3>Comment:</h3>
-  <p id='comment-display'>
-    Insert comment here
-  </p>
-
-  <!-- New Ramen Form -->
-  <form id="new-ramen">
-    <h4>Add New Ramen</h4>
-    <label for="name">Name: </label>
-    <input type="text" name="name" id="new-name" />
-    <label for="restaurant">Restaurant: </label>
-    <input type="text" name="restaurant" id="new-restaurant" />
-    <label for="image">Image: </label>
-    <input type="text" name="image" id="new-image" />
-    <label for="rating">Rating: </label>
-    <input type="number" name="rating" id="new-rating" />
-    <label for="new-comment">Comment: </label>
-    <textarea name="new-comment" id="new-comment"></textarea>
-    <input type="submit" value="Create" />
-  </form>
-
-</body>
-
-</html>
+<body> 
+    <div class = "div-block">
+        <img src="file:///Users/joliegielchinsky/Desktop/phase1-project/placeholder.png" loading="eager" width="170" id="activepkmnimg" alt="" class="activepkmn">
+        <img src="file:///Users/joliegielchinsky/Desktop/phase1-project/placeholder.png" loading="eager" width="195" id="wildpkmnimg" alt="" class="wildpkmn">
+        <img src="file:///Users/joliegielchinsky/Desktop/phase1-project/pokeball.png" loading="eager" width="60" sizes="60px" alt="" class="partypkmn" id="partypkmn6">
+        <img src="file:///Users/joliegielchinsky/Desktop/phase1-project/pokeball.png" loading="eager" width="60" sizes="60px" alt="" class="partypkmn" id="partypkmn5">
+        <img src="file:///Users/joliegielchinsky/Desktop/phase1-project/pokeball.png" loading="eager" sizes="60px" width="60" alt="" class="partypkmn" id="partypkmn4">
+        <img src="file:///Users/joliegielchinsky/Desktop/phase1-project/pokeball.png" loading="eager" width="60" sizes="60px" alt="" class="partypkmn" id="partypkmn3">
+        <img src="file:///Users/joliegielchinsky/Desktop/phase1-project/pokeball.png" loading="eager" width="60" sizes="60px" alt="" class="partypkmn" id="partypkmn2">
+        <img src="file:///Users/joliegielchinsky/Desktop/phase1-project/pokeball.png" loading="eager" width="60" sizes="60px" alt="" class="partypkmn" id="partypkmn1">
+        <div class="form-block">
+            <form id="battleform" name="battleform" data-name="" method="get" class="form" aria-label="Form">
+                <select id="field" name="field" data-name="Field" class="select-field w-select">
+                    <option value="">Select a move...</option>
+                    <option value="First" id="move1">First choice</option>
+                    <option value="Second" id="move2">Second choice</option>
+                    <option value="Third" id="move3">Third choice</option>
+                    <option value="Fourth" id="move4">Fourth choice</option></select>
+                    <input type="submit" value="BATTLE" data-wait="Please wait..." class="submit-button w-button"></form>
+                    </div>
+    
+        
+    </div>
+    <script defer type="text/javascript" src="./src/index.js"></script>
+</body></html>
