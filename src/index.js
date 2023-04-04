@@ -12,6 +12,8 @@ let move4 = document.getElementById("move4")
 let h1 = document.createElement("h1")
 let displayDiv = document.querySelector(".div-block")
 displayDiv.append(h1)
+let activeHealth = document.getElementById("activehealth")
+let wildHealth = document.getElementById("wildhealth")
 
 fetch("http://localhost:3000/pokemon") 
 .then((response) => response.json())
@@ -23,6 +25,7 @@ fetch("http://localhost:3000/pokemon")
         party.push(randomParty);
         }
         wildPkmnImg.src = wildPkmn.image1
+        wildHealth.max = wildPkmn.stats.hp;
 });
 
 
@@ -32,6 +35,7 @@ pokeballs.forEach((pokeball, index)=> {
     pokeball.addEventListener("click", () => {
         activePkmn = party[index]
         activePkmnImg.src = activePkmn.image2
+        activeHealth.max = activePkmn.stats.hp; 
         move1.textContent = activePkmn.moveset[0].name
         move2.textContent = activePkmn.moveset[1].name
         move3.textContent = activePkmn.moveset[2].name
@@ -52,24 +56,35 @@ function calculateDamage(attacker, defender, move) {
     const defenseStat = move.category === 'Special' ? defender.stats.spDef : defender.stats.def;
     const stab = move.type === attacker.type1 || move.type === attacker.type2 ? 1.5 : 1;
     const effectiveness = defender.weaknesses[move.type] || 1;
-    const damage = Math.floor((((2 * attacker.level) / 5 + 2) * move.power * (attackStat / defenseStat)) / 50 + 2);
-    const finalDamage = Math.floor(damage * stab * effectiveness);
-    return finalDamage;
+    const resistances = defender.resistances[move.type] || 1;
+    const damage = Math.floor((((2 * 50) / 5 + 2) * move.power * (attackStat / defenseStat)) / 50 + 2);
+    let finalDamage = Math.floor(damage * stab * effectiveness * resistances);
+    console.log(attackStat, defenseStat, stab, effectiveness, resistances, damage, finalDamage)
+    return finalDamage
     }
 
+
+
 let attack
+
 
 form.addEventListener("submit", (e) => {
     e.preventDefault()
     let moveIndex = e.target.field.value
     attack = activePkmn.moveset[moveIndex]
-    console.log(calculateDamage(activePkmn, wildPkmn, attack))
-    // calculateDamage(wildPkmn, activePkmn, randomMove)
-
-
-
+    let randomIndex = Math.ceil(Math.random() * 3)
+    wildPkmnAttack = wildPkmn.moveset[randomIndex]
+    activeHealth.value -= calculateDamage(activePkmn, wildPkmn, attack)
+    wildHealth.value -= calculateDamage(wildPkmn, activePkmn, wildPkmnAttack)
+    if (wildHealth.value === 0){
+        alert(`The wild ${wildPkmn.name} fainted!`)
+        window.location.reload()
+    }
+    else if (activeHealth.value === 0){
+        alert(`Oh, no! Your ${activePkmn.name} fainted!`)
+        window.location.reload()
+    }
 });
-
 
 
 

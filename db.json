@@ -74,7 +74,7 @@
             "atk" : 127,
             "def" : 111,
             "spAtk" : 166,
-            "spAef" : 120,
+            "spDef" : 120,
             "speed" : 154
         },
         "moveset" : [
@@ -132,7 +132,7 @@
         "type1" : "Water",
         "type2" : null,
         "stats" : {
-            "hP" : 140,
+            "hp" : 140,
             "atk" : 83,
             "def" : 100,
             "spAtk" : 85,
