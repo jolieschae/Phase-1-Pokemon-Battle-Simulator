@@ -1,3 +1,12 @@
+body, html {
+height: 100%;
+}
+
+div.wrap {
+  height:100%; 
+  overflow:hidden
+}
+
 .div-block {
   position: static;
   z-index: auto;
@@ -34,14 +43,16 @@
   margin-top: 240px;
   margin-bottom: 95px;
   margin-left: 425px;
+  height: 23%;
   background-color: transparent;
 }
 
 #wildpkmnimg {
   position: fixed;
-  margin-top: 96px;
+  margin-top: 115px;
   margin-bottom: 95px;
-  margin-left: 650px;
+  margin-left: 490px;
+  height: 18%;
   background-color: transparent;
 }
 
@@ -156,13 +167,48 @@ h1 {
   margin-inline-end: 0px;
   bottom: auto;
   position: absolute;
-  top: 785px;
-  left : 795px;
+  top: 365px;
+  left : 230px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: small;
   color: #ad0303;
   background-color: black;
   border-color: #ad0303;
   border-style: double;
-  /* change font styling */
+}
+
+#wildhealth {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: auto;
+  position: absolute;
+  top: 100px;
+  left : 620px;
+  width: 200px;
+  height: 20px;
+  padding: 5px;
+  background: #ddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+}
+
+#activehealth {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  bottom: auto;
+  position: absolute;
+  top: 150px;
+  left : 250px;
+  width: 200px;
+  height: 20px;
+  padding: 5px;
+  background: #ddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
 }

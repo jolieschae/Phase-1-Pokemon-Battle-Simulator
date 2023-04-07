@@ -4,11 +4,11 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Wild Pokemon Encounter</title>
 </head>
-<body> 
+<body> <div class=wrap>
     <div class = "div-block">
-        <img src="file:///Users/joliegielchinsky/Desktop/phase1-project/placeholder.png" loading="eager" width="175" id="activepkmnimg" alt="" class="activepkmn">
+        <img src="file:///Users/joliegielchinsky/Desktop/phase1-project/placeholder.png" loading="eager" id="activepkmnimg" alt="" class="activepkmn">
         <progress id="activehealth" value="1000" max="100"></progress>
-        <img src="file:///Users/joliegielchinsky/Desktop/phase1-project/placeholder.png" loading="eager" width="175" id="wildpkmnimg" alt="" class="wildpkmn">
+        <img src="file:///Users/joliegielchinsky/Desktop/phase1-project/placeholder.png" loading="eager" id="wildpkmnimg" alt="" class="wildpkmn">
         <progress id="wildhealth" value="1000" max="100"></progress>
         <img src="file:///Users/joliegielchinsky/Desktop/phase1-project/pokeball.png" loading="eager" width="60" sizes="60px" alt="" class="partypkmn" id="partypkmn6">
         <img src="file:///Users/joliegielchinsky/Desktop/phase1-project/pokeball.png" loading="eager" width="60" sizes="60px" alt="" class="partypkmn" id="partypkmn5">
@@ -20,14 +20,14 @@
             <form id="battleform" name="battleform" data-name="" method="get" class="form" aria-label="Form">
                 <select id="field" name="field" data-name="Field" class="select-field w-select">
                     <option value="">Select a move...</option>
-                    <option value=0 id="move1">First choice</option>
-                    <option value=1 id="move2">Second choice</option>
-                    <option value=2 id="move3">Third choice</option>
-                    <option value=3 id="move4">Fourth choice</option></select>
+                    <option value=0 id="move1">----</option>
+                    <option value=1 id="move2">----</option>
+                    <option value=2 id="move3">----</option>
+                    <option value=3 id="move4">----</option></select>
                     <input type="submit" value="BATTLE" data-wait="Please wait..." class="submit-button w-button"></form>
                     </div>
     
         
-    </div>
+    </div></div>
     <script defer type="text/javascript" src="./src/index.js"></script>
 </body></html>

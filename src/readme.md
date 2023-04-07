@@ -3,3 +3,5 @@ https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute
 https://gamerant.com/pokemon-damage-calculation-help-guide/
 https://www.pkparaiso.com/pokedex/
 https://bulbapedia.bulbagarden.net/wiki/Main_Page
+https://codepen.io/dwidomski/pen/DegdPX
+http://www.pokemaniablog.com/2017/11/11/CalculatingHP.html
