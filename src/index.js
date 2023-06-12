@@ -41,13 +41,15 @@ pokeballs.forEach((pokeball, index)=> {
     });
     pokeball.addEventListener("mouseover", () => {
         h1.textContent = party[index].name;
+        h1.style.display = "block";
     pokeball.setAttribute('data-pokemon', party[index].name);
     });
 
     pokeball.addEventListener("mouseout", () => {
-        h1.textContent = "";
+        h1.style.display = "none";
     });
 });
+
 
 function calculateDamage(attacker, defender, move) {
     const attackStat = move.category === 'Special' ? attacker.stats.spAtk : attacker.stats.atk;
