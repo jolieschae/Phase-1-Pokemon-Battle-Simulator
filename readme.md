@@ -10,6 +10,13 @@ When a wild Pokemon's health is below 25% of their total health points, the play
 
 We created a database of 66 fan-favorites for you to play with and catch. Try to catch them all!
 
+Demo:
+
+
+
+https://github.com/user-attachments/assets/407168ad-9322-4960-bad3-bbd2f8178242
+
+
 
 https://www.w3schools.com/jsref/event_onmouseover.asp
 https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute
